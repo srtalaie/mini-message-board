@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  p Add a Message
+  form(action='/new', method='POST')
+    p
+      |user: 
+      input(type='text', name='user', value='')
+      |message: 
+      input(type='text', name='text', value='')
+    input(type='submit', value='Submit')
